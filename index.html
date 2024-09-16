@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CURD</title>
+    <!-- fontawseme -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- bootstrap  -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Normalize website  -->
+    <link rel="stylesheet" href="css/normalize css.css">
+    <!-- local css -->
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+
+<body>
+    <!-- to add product in input  -->
+    <div class="container py-3">
+        <label for="productName"> productName </label>
+        <input type="text" id="productName" class="form-control mb-3">
+
+        <label for="productPrize"> productPrize </label>
+        <input type="number" id="productPrize" class="form-control mb-3">
+
+        <label for="productCatogery"> productCatogery </label>
+        <input type="text" id="productCatogery" class="form-control mb-3">
+
+        <label for="productDes"> productDes </label>
+        <textarea id="productDes" class="form-control mb-3"></textarea>
+
+        <button class="btn btn-large btn-outline-info " onclick="addProduct()">Add Product</button>
+
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <input type="search" oninput="search()" id="search" placeholder="Search by name .." class="form-control w-50 mx-auto  py-3  col-10 rounded-5"  >
+              <!-- <button  class="btn btn-outline-warning  btn-sm col-1 w-25" onclick="search()">Search</button> -->
+        </div>    
+    </div>
+    
+    
+
+
+
+
+
+    <!-- display product  -->
+    <div class="container w-75 py-3">
+        <table class="table">
+            <thead>
+                <th>Name</th>
+                <th>Prize</th>
+                <th>Catogery</th>
+                <th>Descrbtion</th>
+                <th>Update</th>
+                <th >Delete</th>
+            </thead>
+            <tbody id="tableBody">
+            </tbody>
+
+        </table>
+    </div>
+
+
+
+
+    <!-- fontawseme -->
+    <script src="js/all.min.js"></script>
+    <!-- bootstrap  -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- local css -->
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
